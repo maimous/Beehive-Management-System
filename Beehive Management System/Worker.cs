@@ -8,5 +8,13 @@ namespace Beehive_Management_System
 {
     class Worker
     {
+        private string[] jobsICanDo;
+        private int shiftsToWork;
+        private int shiftsWorked;
+
+        public Worker(string[] jobsICanDo)
+        {
+            this.jobsICanDo = jobsICanDo;
+        }
     }
 }
