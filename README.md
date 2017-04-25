@@ -8,3 +8,7 @@
 &nbsp;
 ## 01 Build the form
 * Add a GroupBox, a ComboBox, a NumericUpDown, Labels, Buttons and a TextBox.
+
+&nbsp;
+## 02 Add the Worker class and its constructor
+* The constructor just sets the jobsICanDo field, which is a string array. It’s private because we want the queen to ask the worker to do a job, rather than make her check whether he knows how to do it.
