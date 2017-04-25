@@ -16,5 +16,10 @@ namespace Beehive_Management_System
         {
             InitializeComponent();
         }
+
+        private void shifts_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
