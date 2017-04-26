@@ -27,3 +27,8 @@
 &nbsp;
 ## 05 Add the Queen class and its constructor
 * The queen keeps her array of workers private because once they’re assigned, no other class should be able to change them…or even see them, since she’s the only one who gives them orders. The constructor sets the field’s value.
+
+&nbsp;
+## 06 Add the Queen class methods
+* When she assigns work to her worker bees, she starts with the first one and tries assigning him the job. If he can’t do it, she moves on to the next. When a bee who can do the job is found, the method returns (which stops the loop).
+* The queen’s WorkTheNextShift() method tells each worker to work a shift and adds a line to the report depending on the worker’s status.
