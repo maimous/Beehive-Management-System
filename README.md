@@ -60,3 +60,7 @@
 &nbsp;
 ## 12 Override the HoneyConsumptionRate() method for Worker
 * The Queen can use the base HoneyConsumptionRate() method that she inherits from her Bee superclass, but the Worker will need to override the method to add an additional .65 units per shift worked.
+
+&nbsp;
+## 13 Add honey consumption to the shift report
+* Modify the Queen’s WorkTheNextShift() method to keep track of the honey consumed by the Queen object and each of  the Worker objects, calling each object’s HoneyConsumptionRate() method and adding it to a total.
