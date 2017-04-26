@@ -56,3 +56,7 @@
 ## 11 Modify the Queen and Worker classes to extend Bee
 * Add a double parameter called weightMg to the Queen and Worker constructors. It gets passed back to the base constructor.
 * In the form's code the weights need to be added to the Worker and Queen constructors.
+
+&nbsp;
+## 12 Override the HoneyConsumptionRate() method for Worker
+* The Queen can use the base HoneyConsumptionRate() method that she inherits from her Bee superclass, but the Worker will need to override the method to add an additional .65 units per shift worked.

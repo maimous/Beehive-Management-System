@@ -17,6 +17,15 @@ namespace Beehive_Management_System
             this.jobsICanDo = jobsICanDo;
         }
 
+        const double honeyUnitsPerShiftWorked = .65;
+
+        public override double HoneyConsumptionRate()
+        {
+            double consumption = base.HoneyConsumptionRate();
+            consumption += shiftsWorked * honeyUnitsPerShiftWorked;
+            return consumption;
+        }
+
         public int ShiftsLeft
         {
             get
