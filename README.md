@@ -42,3 +42,7 @@
 &nbsp;
 ## 08 Configure the assignJob_Click
 * The assignJob button calls the queen’s AssignWork() method to assign work to a worker, and displays a message box, depending on whether or not a worker’s available to do the job.
+
+&nbsp;
+## 09 Configure the nextShift_Click
+* The nextShift button tells the queen to work the next shift. She generates a report, which it displays in the report text box.

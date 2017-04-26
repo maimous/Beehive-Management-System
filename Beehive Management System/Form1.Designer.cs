@@ -58,9 +58,24 @@
             // shifts
             // 
             this.shifts.Location = new System.Drawing.Point(262, 58);
+            this.shifts.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.shifts.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.shifts.Name = "shifts";
             this.shifts.Size = new System.Drawing.Size(94, 24);
             this.shifts.TabIndex = 4;
+            this.shifts.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.shifts.ValueChanged += new System.EventHandler(this.shifts_ValueChanged);
             // 
             // assignJob
@@ -115,6 +130,7 @@
             this.nextShift.TabIndex = 4;
             this.nextShift.Text = "Work the next shift";
             this.nextShift.UseVisualStyleBackColor = true;
+            this.nextShift.Click += new System.EventHandler(this.nextShift_Click);
             // 
             // report
             // 

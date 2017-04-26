@@ -41,5 +41,10 @@ namespace Beehive_Management_System
                 MessageBox.Show("The job ‘" + workerBeeJob.Text + "’ will be done in "
                     + shifts.Value + " shifts", "The queen bee says...");
         }
+
+        private void nextShift_Click(object sender, EventArgs e)
+        {
+            report.Text = queen.WorkTheNextShift();
+        }
     }
 }
