@@ -16,5 +16,24 @@ namespace Beehive_Management_System
         {
             this.jobsICanDo = jobsICanDo;
         }
+
+        public int ShiftsLeft
+        {
+            get
+            {
+                return shiftsToWork - shiftsWorked;
+            }
+        }
+
+        private string currentJob = "";
+        public string CurrentJob
+        {
+            get
+            {
+                return currentJob;
+            }
+        }
+
+        
     }
 }

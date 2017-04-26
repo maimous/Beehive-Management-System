@@ -12,3 +12,8 @@
 &nbsp;
 ## 02 Add the Worker class and its constructor
 * The constructor just sets the jobsICanDo field, which is a string array. It’s private because we want the queen to ask the worker to do a job, rather than make her check whether he knows how to do it.
+
+&nbsp;
+## 03 Add the Worker class properties
+* ShiftsLeft is a read-only property that calculates how many shifts are left on the current job.
+* CurrentJob is a read-only property that tells the queen which job needs to be done.
