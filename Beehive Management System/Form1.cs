@@ -15,6 +15,14 @@ namespace Beehive_Management_System
         public Form1()
         {
             InitializeComponent();
+            workerBeeJob.SelectedIndex = 0;
+            Worker[] workers = new Worker[4];
+            workers[0] = new Worker(new string[] { "Nectar collector", "Honey manufacturing" });
+            workers[1] = new Worker(new string[] { "Egg care", "Baby bee tutoring" });
+            workers[2] = new Worker(new string[] { "Hive maintenance", "Sting patrol" });
+            workers[3] = new Worker(new string[] { "Nectar collector", "Honey manufacturing",
+                "Egg care", "Baby bee tutoring", "Hive maintenance", "Sting patrol" });
+            Queen queen = new Queen(workers);
         }
 
         private void shifts_ValueChanged(object sender, EventArgs e)

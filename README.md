@@ -32,3 +32,9 @@
 ## 06 Add the Queen class methods
 * When she assigns work to her worker bees, she starts with the first one and tries assigning him the job. If he can’t do it, she moves on to the next. When a bee who can do the job is found, the method returns (which stops the loop).
 * The queen’s WorkTheNextShift() method tells each worker to work a shift and adds a line to the report depending on the worker’s status.
+
+&nbsp;
+## 07 Add queen and worker objects in the form's code
+* Setting `workerBeeJob.SelectedIndex = 0;` sets the ComboBox to show its first item (so it’s not blank when the form loads.
+* Add an array of four Workers.
+* Add a Queen.
