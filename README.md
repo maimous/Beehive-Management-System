@@ -46,3 +46,8 @@
 &nbsp;
 ## 09 Configure the nextShift_Click
 * The nextShift button tells the queen to work the next shift. She generates a report, which it displays in the report text box.
+
+&nbsp;
+## 10 Add the Bee class
+* The Bee constructor takes one parameter, the weight of the bee in milligrams, which is used in the base honey consumption calculation.
+* The Bee class has a HoneyConsumptionRate() method that calculates how much honey the bee uses per shift.
