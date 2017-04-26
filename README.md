@@ -38,3 +38,7 @@
 * Setting `workerBeeJob.SelectedIndex = 0;` sets the ComboBox to show its first item (so it’s not blank when the form loads.
 * Add an array of four Workers.
 * Add a Queen.
+
+&nbsp;
+## 08 Configure the assignJob_Click
+* The assignJob button calls the queen’s AssignWork() method to assign work to a worker, and displays a message box, depending on whether or not a worker’s available to do the job.

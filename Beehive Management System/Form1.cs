@@ -12,6 +12,8 @@ namespace Beehive_Management_System
 {
     public partial class Form1 : Form
     {
+        private Queen queen;
+
         public Form1()
         {
             InitializeComponent();
@@ -22,12 +24,22 @@ namespace Beehive_Management_System
             workers[2] = new Worker(new string[] { "Hive maintenance", "Sting patrol" });
             workers[3] = new Worker(new string[] { "Nectar collector", "Honey manufacturing",
                 "Egg care", "Baby bee tutoring", "Hive maintenance", "Sting patrol" });
-            Queen queen = new Queen(workers);
+            queen = new Queen(workers);
         }
 
         private void shifts_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void assignJob_Click(object sender, EventArgs e)
+        {
+            if (queen.AssignWork(workerBeeJob.Text, (int)shifts.Value) == false)
+                MessageBox.Show("No workers are available to do the job ‘"
+                    + workerBeeJob.Text + "’", "The queen bee says...");
+            else
+                MessageBox.Show("The job ‘" + workerBeeJob.Text + "’ will be done in "
+                    + shifts.Value + " shifts", "The queen bee says...");
         }
     }
 }
