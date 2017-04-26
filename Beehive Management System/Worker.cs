@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Beehive_Management_System
 {
-    class Worker
+    class Worker : Bee
     {
         private string[] jobsICanDo;
         private int shiftsToWork;
         private int shiftsWorked;
 
-        public Worker(string[] jobsICanDo)
+        public Worker(string[] jobsICanDo, double weightMg) : base(weightMg)
         {
             this.jobsICanDo = jobsICanDo;
         }

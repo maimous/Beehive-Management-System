@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Beehive_Management_System
 {
-    class Queen
+    class Queen : Bee
     {
         private Worker[] workers;
         private int shiftNumber = 0;
 
-        public Queen(Worker[] workers)
+        public Queen(Worker[] workers, double weightMg) :base(weightMg)
         {
             this.workers = workers;
         }

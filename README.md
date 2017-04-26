@@ -51,3 +51,8 @@
 ## 10 Add the Bee class
 * The Bee constructor takes one parameter, the weight of the bee in milligrams, which is used in the base honey consumption calculation.
 * The Bee class has a HoneyConsumptionRate() method that calculates how much honey the bee uses per shift.
+
+&nbsp;
+## 11 Modify the Queen and Worker classes to extend Bee
+* Add a double parameter called weightMg to the Queen and Worker constructors. It gets passed back to the base constructor.
+* In the form's code the weights need to be added to the Worker and Queen constructors.
